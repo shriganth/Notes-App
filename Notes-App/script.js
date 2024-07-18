@@ -43,4 +43,11 @@ notesContainer.addEventListener("click", function (del) {
     //         }
     //     })
     // }
-})
+});
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
+        document.execCommand("insert line break");
+        event.preventDefault();
+    }
+});
